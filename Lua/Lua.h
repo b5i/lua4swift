@@ -1,5 +1,10 @@
 @import Foundation;
-@import LuaSource;
+
+#ifdef LUA_USE_IOS
+@import LuaSource_iOS;
+#else
+@import LuaSource_macOS;
+#endif
 
 //! Project version number for Lua.
 FOUNDATION_EXPORT double LuaVersionNumber;

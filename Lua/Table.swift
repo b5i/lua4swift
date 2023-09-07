@@ -1,4 +1,3 @@
-
 open class Table: StoredValue {
     
     override open func kind() -> Kind { return .table }

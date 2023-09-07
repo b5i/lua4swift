@@ -1,11 +1,10 @@
-import Cocoa
 import XCTest
-import Lua
+import Lua_iOS
 
 class Lua_Tests: XCTestCase {
     
     func testFundamentals() {
-        let vm = Lua.VirtualMachine()
+        let vm = VirtualMachine()
         let table = vm.createTable()
         table[3] = "foo"
         XCTAssert(table[3] is String)
@@ -13,7 +12,7 @@ class Lua_Tests: XCTestCase {
     }
     
     func testStringX() {
-        let vm = Lua.VirtualMachine()
+        let vm = VirtualMachine()
         
         let stringxLib = vm.createTable()
         
@@ -50,7 +49,7 @@ class Lua_Tests: XCTestCase {
             }
         }
     
-        let vm = Lua.VirtualMachine()
+        let vm = VirtualMachine()
         
         let noteLib:CustomType<Note> = vm.createCustomType {
             type in

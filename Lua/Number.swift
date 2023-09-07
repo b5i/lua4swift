@@ -1,4 +1,3 @@
-
 open class Number: StoredValue, CustomDebugStringConvertible {
     
     override open func kind() -> Kind { return .number }

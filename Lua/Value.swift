@@ -1,4 +1,3 @@
-
 public protocol Value {
     func push(_ vm: VirtualMachine)
     func kind() -> Kind

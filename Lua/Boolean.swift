@@ -1,4 +1,3 @@
-
 extension Bool: Value {
     
     public func push(_ vm: VirtualMachine) {

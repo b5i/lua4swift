@@ -1,4 +1,3 @@
-
 open class Nil: Value, Equatable {
     
     open func push(_ vm: VirtualMachine) {

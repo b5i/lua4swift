@@ -1,4 +1,3 @@
-
 extension String: Value {
     
     public func push(_ vm: VirtualMachine) {
